@@ -1,0 +1,760 @@
+/* =========================================
+   PASSWORD SECURITY ANALYZER
+   Main Stylesheet
+   ========================================= */
+
+
+/* ---------- General ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* ---------- Header ---------- */
+
+.header {
+    background:
+        linear-gradient(
+            135deg,
+            #0f172a,
+            #172554,
+            #0f172a
+        );
+
+    border-bottom: 1px solid #334155;
+
+    text-align: center;
+
+    padding: 70px 20px;
+}
+
+
+.logo {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+
+.header h1 {
+    font-size: 42px;
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+
+.header p {
+    color: #cbd5e1;
+    font-size: 18px;
+}
+
+
+/* ---------- Main ---------- */
+
+main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+/* ---------- Introduction ---------- */
+
+.intro {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+.intro h2 {
+    color: #f8fafc;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+
+.intro p {
+    max-width: 850px;
+    margin: 10px auto;
+    color: #cbd5e1;
+}
+
+
+/* ---------- Cards ---------- */
+
+.card {
+    background: #1e293b;
+
+    border: 1px solid #334155;
+
+    border-radius: 18px;
+
+    padding: 35px;
+
+    margin-bottom: 30px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.20);
+}
+
+
+.card h2 {
+    color: #38bdf8;
+
+    font-size: 26px;
+
+    margin-bottom: 10px;
+}
+
+
+.card h3 {
+    color: #f8fafc;
+
+    margin-top: 30px;
+
+    margin-bottom: 15px;
+}
+
+
+.section-description {
+    color: #94a3b8;
+    margin-bottom: 25px;
+}
+
+
+/* ---------- Input ---------- */
+
+label {
+    display: block;
+
+    color: #f8fafc;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+input[type="password"] {
+    width: 100%;
+
+    padding: 16px;
+
+    border-radius: 10px;
+
+    border: 2px solid #475569;
+
+    background: #0f172a;
+
+    color: #f8fafc;
+
+    font-size: 17px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+input[type="password"]:focus {
+    border-color: #38bdf8;
+
+    box-shadow:
+        0 0 0 3px rgba(56, 189, 248, 0.15);
+}
+
+
+input::placeholder {
+    color: #64748b;
+}
+
+
+/* ---------- Notice ---------- */
+
+.notice {
+    background: #172554;
+
+    border-left: 4px solid #38bdf8;
+
+    padding: 18px;
+
+    border-radius: 8px;
+
+    margin-top: 20px;
+}
+
+
+.notice strong {
+    color: #38bdf8;
+}
+
+
+.notice p {
+    color: #cbd5e1;
+
+    margin-top: 5px;
+}
+
+
+/* ---------- Strength Guide ---------- */
+
+.strength-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 10px;
+}
+
+
+.strength {
+    padding: 18px;
+
+    border-radius: 10px;
+
+    color: white;
+
+    min-height: 150px;
+}
+
+
+.strength span {
+    display: inline-flex;
+
+    width: 32px;
+    height: 32px;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.2);
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+.strength strong {
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+
+.strength p {
+    font-size: 13px;
+
+    color: rgba(255,255,255,0.85);
+}
+
+
+.very-weak {
+    background: #991b1b;
+}
+
+
+.weak {
+    background: #c2410c;
+}
+
+
+.fair {
+    background: #a16207;
+}
+
+
+.strong {
+    background: #15803d;
+}
+
+
+.very-strong {
+    background: #047857;
+}
+
+
+/* ---------- Checklist ---------- */
+
+.checklist {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 12px;
+}
+
+
+.check {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 14px;
+
+    background: #0f172a;
+
+    border: 1px solid #334155;
+
+    border-radius: 8px;
+}
+
+
+.check span {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+
+    background: #16a34a;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+
+.check p {
+    color: #cbd5e1;
+}
+
+
+/* ---------- Generator ---------- */
+
+.generator-box {
+    background: #0f172a;
+
+    border: 1px solid #334155;
+
+    border-radius: 12px;
+
+    padding: 25px;
+}
+
+
+.length-options {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+.length-card {
+    position: relative;
+
+    text-align: center;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    border: 1px solid #475569;
+
+    background: #1e293b;
+}
+
+
+.length-card strong {
+    display: block;
+
+    color: #38bdf8;
+
+    font-size: 32px;
+}
+
+
+.length-card span {
+    color: #cbd5e1;
+}
+
+
+.length-card small {
+    display: block;
+
+    color: #22c55e;
+
+    margin-top: 8px;
+}
+
+
+.length-card.recommended {
+    border-color: #22c55e;
+}
+
+
+/* ---------- Character Types ---------- */
+
+.character-types {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 12px;
+}
+
+
+.character-types div {
+    padding: 14px;
+
+    background: #1e293b;
+
+    border-radius: 8px;
+
+    color: #cbd5e1;
+}
+
+
+.character-types span {
+    color: #22c55e;
+
+    font-weight: bold;
+
+    margin-right: 8px;
+}
+
+
+/* ---------- Password Examples ---------- */
+
+.warning {
+    color: #fbbf24;
+
+    background: #422006;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    margin-bottom: 15px;
+}
+
+
+.password-example {
+    background: #020617;
+
+    border: 1px solid #334155;
+
+    padding: 17px;
+
+    border-radius: 8px;
+
+    margin-bottom: 10px;
+
+    overflow-x: auto;
+}
+
+
+.password-example code {
+    color: #38bdf8;
+
+    font-size: 16px;
+
+    letter-spacing: 1px;
+}
+
+
+/* ---------- Security Tips ---------- */
+
+.tips {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+
+.tip {
+    display: flex;
+
+    gap: 15px;
+
+    background: #0f172a;
+
+    border: 1px solid #334155;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+
+.tip > span {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 45px;
+    height: 45px;
+
+    background: #0c4a6e;
+
+    color: #38bdf8;
+
+    border-radius: 50%;
+
+    font-weight: bold;
+}
+
+
+.tip h3 {
+    margin: 0 0 5px 0;
+
+    color: #f8fafc;
+}
+
+
+.tip p {
+    color: #94a3b8;
+
+    font-size: 14px;
+}
+
+
+/* ---------- Attacks ---------- */
+
+.attack-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+
+.attack {
+    padding: 22px;
+
+    background: #0f172a;
+
+    border: 1px solid #334155;
+
+    border-radius: 10px;
+}
+
+
+.attack h3 {
+    margin: 0 0 10px 0;
+
+    color: #f87171;
+}
+
+
+.attack p {
+    color: #cbd5e1;
+}
+
+
+/* ---------- Process ---------- */
+
+.process {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+
+.process-step {
+    flex: 1;
+
+    text-align: center;
+
+    padding: 20px;
+
+    background: #0f172a;
+
+    border-radius: 10px;
+
+    border: 1px solid #334155;
+}
+
+
+.process-step span {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    margin: 0 auto 10px;
+
+    border-radius: 50%;
+
+    background: #0284c7;
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 18px;
+}
+
+
+.process-step h3 {
+    margin: 0 0 8px;
+
+    color: #f8fafc;
+}
+
+
+.process-step p {
+    color: #94a3b8;
+
+    font-size: 14px;
+}
+
+
+.arrow {
+    color: #38bdf8;
+
+    font-size: 30px;
+
+    font-weight: bold;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    text-align: center;
+
+    padding: 40px 20px;
+
+    border-top: 1px solid #334155;
+
+    color: #94a3b8;
+}
+
+
+footer h3 {
+    color: #38bdf8;
+
+    margin-bottom: 8px;
+}
+
+
+footer p {
+    margin: 5px;
+}
+
+
+footer .copyright {
+    color: #64748b;
+
+    margin-top: 15px;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .strength-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .process {
+        flex-direction: column;
+    }
+
+    .arrow {
+        transform: rotate(90deg);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+
+    .card {
+        padding: 22px;
+    }
+
+
+    .strength-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .checklist {
+        grid-template-columns: 1fr;
+    }
+
+
+    .length-options {
+        grid-template-columns: 1fr;
+    }
+
+
+    .character-types {
+        grid-template-columns: 1fr;
+    }
+
+
+    .tips {
+        grid-template-columns: 1fr;
+    }
+
+
+    .attack-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .intro h2 {
+        font-size: 25px;
+    }
+
+}

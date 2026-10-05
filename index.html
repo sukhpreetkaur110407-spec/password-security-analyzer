@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Password Security Analyzer & Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+
+            <div class="logo">
+                🔐
+            </div>
+
+            <h1>Password Security Analyzer</h1>
+
+            <p>
+                Analyze password security and learn how to create stronger passwords.
+            </p>
+
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="container">
+
+
+        <!-- Introduction -->
+        <section class="intro">
+
+            <h2>Password Security Analyzer & Generator</h2>
+
+            <p>
+                Passwords are one of the most important parts of online security.
+                Weak and predictable passwords can make accounts vulnerable to
+                brute-force attacks, dictionary attacks and credential attacks.
+            </p>
+
+            <p>
+                This project provides a simple educational interface for
+                understanding password strength and creating stronger passwords.
+            </p>
+
+        </section>
+
+
+
+        <!-- Analyzer Section -->
+        <section class="card">
+
+            <h2>🔎 Password Security Analyzer</h2>
+
+            <p class="section-description">
+                Enter a password below to review the characteristics of a secure password.
+            </p>
+
+
+            <label for="password">
+                Password
+            </label>
+
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+            >
+
+
+            <div class="notice">
+
+                <strong>Privacy Notice</strong>
+
+                <p>
+                    This educational version does not send or store your password.
+                    For security reasons, never enter an important real-world password
+                    into an online demonstration tool.
+                </p>
+
+            </div>
+
+
+            <!-- Strength Guide -->
+            <h3>Password Strength Guide</h3>
+
+            <div class="strength-container">
+
+                <div class="strength very-weak">
+                    <span>1</span>
+                    <div>
+                        <strong>Very Weak</strong>
+                        <p>
+                            Short, common or predictable passwords.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="strength weak">
+                    <span>2</span>
+                    <div>
+                        <strong>Weak</strong>
+                        <p>
+                            Password needs significant improvement.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="strength fair">
+                    <span>3</span>
+                    <div>
+                        <strong>Fair</strong>
+                        <p>
+                            Some security characteristics are present.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="strength strong">
+                    <span>4</span>
+                    <div>
+                        <strong>Strong</strong>
+                        <p>
+                            Long and difficult to predict.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="strength very-strong">
+                    <span>5</span>
+                    <div>
+                        <strong>Very Strong</strong>
+                        <p>
+                            Long, unique and highly unpredictable.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Password Requirements -->
+            <h3>Security Checklist</h3>
+
+            <div class="checklist">
+
+                <div class="check">
+                    <span>✓</span>
+                    <p>Use at least 12 characters.</p>
+                </div>
+
+                <div class="check">
+                    <span>✓</span>
+                    <p>Use uppercase letters.</p>
+                </div>
+
+                <div class="check">
+                    <span>✓</span>
+                    <p>Use lowercase letters.</p>
+                </div>
+
+                <div class="check">
+                    <span>✓</span>
+                    <p>Include numbers where appropriate.</p>
+                </div>
+
+                <div class="check">
+                    <span>✓</span>
+                    <p>Use special characters where appropriate.</p>
+                </div>
+
+                <div class="check">
+                    <span>✓</span>
+                    <p>Avoid names, birthdays and common words.</p>
+                </div>
+
+                <div class="check">
+                    <span>✓</span>
+                    <p>Never reuse important passwords.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Generator Section -->
+        <section class="card">
+
+            <h2>🔑 Password Generator</h2>
+
+            <p class="section-description">
+                Use the examples below as a guide for creating strong passwords.
+            </p>
+
+
+            <div class="generator-box">
+
+                <h3>Recommended Password Length</h3>
+
+                <div class="length-options">
+
+                    <div class="length-card">
+                        <strong>12</strong>
+                        <span>Characters</span>
+                    </div>
+
+                    <div class="length-card recommended">
+                        <strong>16</strong>
+                        <span>Characters</span>
+                        <small>Recommended</small>
+                    </div>
+
+                    <div class="length-card">
+                        <strong>20+</strong>
+                        <span>Characters</span>
+                    </div>
+
+                </div>
+
+
+                <h3>Character Types</h3>
+
+                <div class="character-types">
+
+                    <div>
+                        <span>✓</span>
+                        Uppercase Letters
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Lowercase Letters
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Numbers
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Special Characters
+                    </div>
+
+                </div>
+
+
+                <h3>Example Strong Passwords</h3>
+
+                <p class="warning">
+                    ⚠ These are examples only. Do not use these exact passwords
+                    for real accounts.
+                </p>
+
+
+                <div class="password-example">
+                    <code>River!Cloud7-Mango$Tree</code>
+                </div>
+
+                <div class="password-example">
+                    <code>Blue#Tiger92!Mountain</code>
+                </div>
+
+                <div class="password-example">
+                    <code>Moon$Garden48!SilverRoad</code>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Security Tips -->
+        <section class="card">
+
+            <h2>🛡️ Password Security Tips</h2>
+
+            <div class="tips">
+
+                <div class="tip">
+                    <span>01</span>
+                    <div>
+                        <h3>Make passwords long</h3>
+                        <p>
+                            Longer passwords generally provide more protection
+                            against guessing and brute-force attacks.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="tip">
+                    <span>02</span>
+                    <div>
+                        <h3>Use unique passwords</h3>
+                        <p>
+                            Avoid using the same password for multiple important accounts.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="tip">
+                    <span>03</span>
+                    <div>
+                        <h3>Avoid predictable information</h3>
+                        <p>
+                            Do not use birthdays, names, phone numbers or common words.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="tip">
+                    <span>04</span>
+                    <div>
+                        <h3>Use multi-factor authentication</h3>
+                        <p>
+                            MFA provides an additional layer of protection if a password
+                            is compromised.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="tip">
+                    <span>05</span>
+                    <div>
+                        <h3>Consider a password manager</h3>
+                        <p>
+                            Password managers can help create and store unique passwords.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Attack Information -->
+        <section class="card">
+
+            <h2>⚠️ Common Password Attacks</h2>
+
+            <div class="attack-grid">
+
+                <div class="attack">
+                    <h3>Brute Force Attack</h3>
+                    <p>
+                        An attacker systematically tries many possible combinations
+                        until the correct password is found.
+                    </p>
+                </div>
+
+
+                <div class="attack">
+                    <h3>Dictionary Attack</h3>
+                    <p>
+                        An attacker tries passwords from lists containing common
+                        words and previously known passwords.
+                    </p>
+                </div>
+
+
+                <div class="attack">
+                    <h3>Credential Stuffing</h3>
+                    <p>
+                        Previously leaked username and password combinations are
+                        attempted on other websites.
+                    </p>
+                </div>
+
+
+                <div class="attack">
+                    <h3>Password Spraying</h3>
+                    <p>
+                        A small number of commonly used passwords are attempted
+                        against many accounts.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- How It Works -->
+        <section class="card">
+
+            <h2>⚙️ How Password Security Works</h2>
+
+            <div class="process">
+
+                <div class="process-step">
+                    <span>1</span>
+                    <h3>Password Creation</h3>
+                    <p>
+                        A user creates a password for an account.
+                    </p>
+                </div>
+
+
+                <div class="arrow">
+                    →
+                </div>
+
+
+                <div class="process-step">
+                    <span>2</span>
+                    <h3>Password Protection</h3>
+                    <p>
+                        A properly designed system stores passwords using
+                        secure password-hashing techniques.
+                    </p>
+                </div>
+
+
+                <div class="arrow">
+                    →
+                </div>
+
+
+                <div class="process-step">
+                    <span>3</span>
+                    <h3>Authentication</h3>
+                    <p>
+                        The system verifies the password when the user signs in.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Project Limitations -->
+        <section class="card">
+
+            <h2>📌 Project Scope</h2>
+
+            <p>
+                This version of the project uses only HTML and CSS.
+                Because JavaScript and backend programming are not used,
+                real-time password scoring and automatic random password
+                generation are not implemented.
+            </p>
+
+            <p>
+                The project focuses on password-security education, interface
+                design, password requirements and cybersecurity awareness.
+            </p>
+
+        </section>
+
+
+
+        <!-- Footer -->
+        <footer>
+
+            <h3>🔐 Password Security Analyzer & Generator</h3>
+
+            <p>
+                Educational Cybersecurity Project
+            </p>
+
+            <p>
+                Built using HTML5 and CSS3
+            </p>
+
+            <p class="copyright">
+                © 2026 Password Security Analyzer
+            </p>
+
+        </footer>
+
+    </main>
+
+</body>
+</html>
